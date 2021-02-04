@@ -4,7 +4,10 @@ def roll_call_dwarves(dwarves)
 end
 end
 
-def summon_captain_planet(veggies)
+def summon_captain_planet(array)
+  array.map! do |item|
+    item.capitalize(&: + "!")
+  end
   # Your code here
 end
 
